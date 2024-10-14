@@ -1,4 +1,5 @@
 
+
 # Crypto Bank
 
 ## Description
@@ -101,7 +102,8 @@ cd CryptoBank
 - **GET /chain**: View the entire blockchain.
 - **GET /validate**: Validate the blockchain.
 
-### Example Request to Create a Transaction
+### Example Requests
+#### Create a Transaction
 Use Postman or any REST client to send a POST request to:
 ```
 http://127.0.0.1:5000/transaction
@@ -114,6 +116,27 @@ With the following JSON body:
   "amount": 10
 }
 ```
+
+#### Mine a Block
+Send a GET request to:
+```
+http://127.0.0.1:5000/mine
+```
+You will receive a JSON response indicating that a new block has been mined.
+
+#### Validate the Blockchain
+Send a GET request to:
+```
+http://127.0.0.1:5000/validate
+```
+This will return a response indicating whether the blockchain is valid or not.
+
+#### View the Blockchain
+Send a GET request to:
+```
+http://127.0.0.1:5000/chain
+```
+This will return the complete blockchain, showing all blocks and transactions.
 
 ### Output
 After successfully creating a transaction or mining a block, you will receive a JSON response indicating the success of the operation. For example, after mining a block, you might see:
@@ -134,10 +157,4 @@ Crypto Bank demonstrates the practical implementation of blockchain technology, 
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ```
-
-### Notes
-- Be sure to replace any placeholders https://github.com/Yash22222/CryptoBank with your actual project details.
-- Adjust any section based on specific features or functionalities you have in your application.
-- Add any additional commands or dependencies relevant to your project. 
