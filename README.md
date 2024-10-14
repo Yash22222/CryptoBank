@@ -1,6 +1,4 @@
 
-
-```markdown
 # Crypto Bank
 
 ## Description
